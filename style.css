@@ -37,9 +37,15 @@ h1 {
 }
 
 .gallery img {
-  max-width: 280px;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  max-width: 140px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
 }
 
 .phrase {
@@ -66,3 +72,23 @@ h1 {
   right: 10px;
   font-size: 2em;
 }
+
+
+.decor {
+  position: absolute;
+  font-size: 2.4em;
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.decor1 { top: 20px; left: 10px; transform: rotate(-15deg); }
+.decor2 { top: 100px; right: 30px; transform: rotate(25deg); }
+.decor3 { top: 200px; left: 60px; }
+.decor4 { top: 350px; right: 100px; }
+.decor5 { bottom: 300px; left: 20px; }
+.decor6 { bottom: 240px; right: 40px; }
+.decor7 { bottom: 120px; left: 80px; }
+.decor8 { top: 480px; left: 40%; }
+.decor9 { top: 600px; right: 50px; }
+.decor10 { bottom: 50px; right: 10px; }
